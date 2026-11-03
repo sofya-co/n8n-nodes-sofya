@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-sofya.sofya",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Utility", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/sofya-co/n8n-nodes-sofya#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/sofya-co/n8n-nodes-sofya#readme"
+			}
+		]
+	}
+}

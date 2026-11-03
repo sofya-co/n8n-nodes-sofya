@@ -1,0 +1,62 @@
+{
+	"name": "n8n-nodes-sofya",
+	"version": "0.1.0",
+	"description": "Sofya web search, page fetch, AI extraction and cited research for n8n workflows and AI agents",
+	"license": "MIT",
+	"homepage": "https://sofya.co",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"sofya",
+		"web-search",
+		"search-api",
+		"web-scraping",
+		"research",
+		"ai-agent"
+	],
+	"author": {
+		"name": "Sofya",
+		"email": "support@sofya.co"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sofya-co/n8n-nodes-sofya.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sofya-co/n8n-nodes-sofya/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease",
+		"test": "npm run build && node --test test/*.test.cjs"
+	},
+	"files": [
+		"dist/credentials",
+		"dist/nodes"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/SofyaApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Sofya/Sofya.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.55.4",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

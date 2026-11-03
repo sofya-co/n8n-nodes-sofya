@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 - 2026-11-03
+
+- Publish settings: public access with npm provenance. No code changes.
+
 ## 0.1.0 - 2026-11-03
 
 First release.
